@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    enum State { Undecided, X, O };
+    public enum State { Undecided, X, O };
 
     class Program
     {
