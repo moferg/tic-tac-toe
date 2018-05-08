@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    class Position // Used to represent a location on the board
+    public class Position // Used to represent a location on the board
     {
-        // Row Property
-        // Column Property
+        public int Row { get; }
+        public int Column { get; }
+
+        public Position(int row, int column)
+        {
+            Row = row;
+            Column = column;
+        }
     }
 }
