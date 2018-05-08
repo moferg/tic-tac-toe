@@ -53,5 +53,14 @@ namespace TicTacToe
 
             return true;
         }
+
+        public bool IsDraw(Board board)
+        {
+            for (int row = 0; row < 3; row++)
+                for (int column = 0; column < 3; column++)
+                    if (board.GetState(new Position(row, column)) == State.Undecided) return false;
+
+            return true;
+        }
     }
 }
