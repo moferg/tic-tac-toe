@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    class Board // Central DS for game as whole
+    public class Board // Central DS for game as whole
     {
         private State[,] state;
         public State NextTurn { get; private set; }
